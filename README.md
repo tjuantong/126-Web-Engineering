@@ -1,1 +1,1 @@
-# CMSC-126-Web-Engineering-
+# CMSC-126-Web-Engineering
