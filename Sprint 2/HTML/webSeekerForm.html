@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webseeker Sign Up Form</title>
+    <link rel="stylesheet" href="webSeekerForm.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="googleSignIn.css">
+
+    <!--For check icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  
+  <body>
+    <div class="container">
+      
+      <!--Progress bar-->
+      <div class="progress-bar">
+
+        <!--Step 1 Profile-->
+        <div class="step">
+          <div class="bullet">
+            <span>1</span>
+          </div>
+
+          <!--check mark-->
+          <div class="check fas fa-check"></div>
+          <p>Profile</p>  
+        </div>
+        <!--End of Step 1 Profile-->
+
+        <!--Step 2 Register-->
+        <div class="step">
+          <div class="bullet">
+            <span>2</span>
+          </div>
+
+          <!--check mark-->
+          <div class="check fas fa-check"></div>
+          <p>Register</p>
+        </div>
+        <!--End of Step 2 Profile-->
+
+        <!--Step 3 Done!-->
+        <div class="step">
+          <div class="bullet">
+            <span>3</span>
+          </div>
+
+          <!--check mark-->
+          <div class="check fas fa-check"></div>
+          <p>Done!</p>
+        </div>
+        <!--End of Step 3 Done!-->
+
+      </div>
+      <!--End of Progress bar-->
+
+      <!--Registration Form-->
+      <div class="form-outer">
+        <form id="form" name="webseeker" action="#">
+          
+          <!--First page of Profile reg form-->
+          <div class="page slide-page">
+            
+            <h1>Tell us more about yourself.</h1>
+
+            <!--Column 1 (Personal Information)-->
+            <div class="col">
+
+              <h2>Personal Information</h2>
+              
+              <!--First column of Column 1-->
+              <div class="col">
+
+                <div class="field">
+                  <div class="label">First Name  *</div>
+                  <input class="field2" id="fname" type="text" value="" required>
+                </div>
+                
+                <div class="field">
+                  <div class="label">Age  *</div>
+                  <input class="field2" id="age" type="number" value="" min="12" max="90" required>
+                </div>
+
+                <div class="field">
+                  <div class="label">Province  *</div>
+                  <input class="field2" id="province" type="text" value="" required>
+                </div>
+                
+                <div class="field">
+                  <div class="label">Occupation  *</div>
+                  <input class="field2" id="occupation" type="text" value="" required>
+                </div>
+
+                <p class="note">NOTE: * These fields are required</p>
+              </div>
+              <!--End of first column of Column 1-->
+
+              <!--Second Column of Column 1-->
+              <div class="col">
+                <div class="field">
+                  <div class="label">Last Name  *</div>
+                  <input class="field2" id="lname" type="text" value="" required>
+                </div>
+
+                <div class="field">
+                  <div class="label">City  *</div>
+                  <input class="field2" id="city" type="text" value="" required>
+                </div>
+
+                <div class="field">
+                  <div class="label">Country  *</div>
+                  <input class="field2" id="country" type="text" value="" required>
+                </div>
+
+              </div>
+              <!--End of Second column of Column 1-->
+
+            </div>
+            <!--End of Column div (Personal Information)-->
+
+            <h2>Education</h2>
+
+            <!--Column 2 (Education and Interests)-->
+            <div class="col">
+              <div class="field">
+                <div class="label">School / University  *</div>
+                <input id="school" type="text" value="" required>
+                <div class="label small">(Please do not abbreviate the name of your school/university)</div>
+              </div>
+              
+              <div class="field">
+                <div class="label">Course and Year Level  *</div>
+                <input id="courseYrLvl" type="text" value="" required>
+                <div class="label small">(i.e. BS Computer Science 2)</div>
+              </div>
+              
+              <h2>Interests</h2>
+                <div class="prompt">
+                  <div class="label">Please check the boxes you're interested in.</div>
+                </div>
+              
+              <!--Separates the checkboxes into 4 columns-->
+              <div class="col3">
+
+                <!--Column 1-->
+                <div class="col">
+                  <input type="checkbox" id="art" name="interest" value="art">Art<br>
+                  <input type="checkbox" id="business" name="interest" value="business">Business<br>
+    	            <input type="checkbox" id="career" name="interest" value="career">Career
+                </div>
+
+                <!--Column 2-->
+                <div class="col">
+                  <input type="checkbox" id="design" name="interest" value="design">Design<br>
+                  <input type="checkbox" id="environment" name="interest" value="environment">Environment<br>
+    	            <input type="checkbox" id="gaming" name="interest" value="gaming">Gaming<br>
+                </div>
+              </div>
+
+              <div class="col3">
+                <!--Column 3-->
+                <div class="col">
+                  <input type="checkbox" id="health" name="interest" value="health">Health<br>
+                  <input type="checkbox" id="leadership" name="interest" value="leadership">Leadership<br>
+    	            <input type="checkbox" id="media" name="interest" value="media">Media
+                </div>
+
+                <!--Column 4-->
+                <div class="col">
+    	            <input type="checkbox" id="politics" name="interest" value="politics">Politics<br>
+                  <input type="checkbox" id="perDev" name="interest" value="personal development">Programming<br>
+                  <input type="checkbox" id="technology" name="interest" value="technology">Technology
+                </div>
+              </div>              
+
+            </div>
+            <!--End of Column 2 (Education and Interests)-->
+
+            <!--for next button-->
+            <div class="field btns left" style="bottom: -10%;">
+              <button type="submit" class="next button2">Next</button>
+            </div>
+          
+          </div>
+          <!--End of Profile Reg form-->
+
+          <!--Second Page (Sign up page)-->
+          <div class="page">
+            <h1>Get started with Webivent.</h1>
+
+              <!--Anchor tag that will redirect to login page-->
+              <p>Already have an account? <a href="login.html">Log in</a> here.</p>
+              <br>
+
+              <div class="field left" style="margin-bottom: 0px;">
+                  <input id="email" type="email" placeholder="*Email Address" required>
+              </div>
+              <div class="field left" style="margin-bottom: 30px;">
+                <input id="password" type="password" placeholder="*Password" required>
+              </div>
+              
+              <!--OR Divider-->
+              <div class="line signinline"></div>
+              <div class="line2 signinline2"></div>
+              <p>OR</p>
+              <!--End of OR Divider-->
+
+              <!--Google sign in button-->
+              <div class="field left"  style="margin-top: 30px;"> 
+                <div id="gSignInWrapper">
+                  <div id="customBtn" class="length customGPlusSignIn">
+                      <span class="icon signin"></span>
+                      <span class="buttonText">Sign up with Google</span>
+                  </div>
+                </div>
+              </div>
+              <!--End of Google sign in button-->
+
+            <!--buttons for prev and next-->
+            <div class="field btns left">
+              <button class="prev">Previous</button>
+              <button class="submitbtn button2">Submit</button>
+            </div>
+            <!--End of buttons for prev and next-->
+
+            <p style="margin-top: -30px;">By registering, you agree to our <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a>.</p>
+          
+          </div>
+          <!--End of second page (sign up page)-->
+
+          <!--Third Page (Done Page)-->
+          <div class="page">
+            <br><br>
+
+            <!--Check icon-->
+            <div class="confirm fas fa-check"></div>
+            <br><br>
+
+            <h1>Awesome!</h1>
+            <br><br>
+            
+            <p>Your account has been successfully created!</p>
+            <p>Please check your email for the confirmation link.</p>
+            <br><br><br>
+            
+            <!--Continue button to redirect user to home page-->
+            <div class="field btns left">
+              <button class="button2 continuebtn">Continue</button>
+            </div>
+            <!--End of continue button-->
+            
+          </div>
+          <!--End of Third Page (Done Page)-->
+        </form>
+        
+      </div>
+      <!--End of Registration Form-->
+
+    </div>
+    <!--Script src for js-->
+    <script src="signUpForm.js"></script>
+  </body>
+</html>

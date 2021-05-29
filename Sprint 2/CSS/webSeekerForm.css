@@ -1,0 +1,317 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*header for current form*/
+h1{
+  font-size: 60px; 
+  font-weight: 900; 
+  text-align: center;
+}
+
+/*Smaller header for profile info, education etc*/
+h2{
+  font-size: 2em;
+}
+
+/*separating a form into 2 columns*/
+.col {
+  float:left;
+  width: 50%;
+}
+
+/*for the Interests prompt*/
+.prompt{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  position: relative;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/*for other descriptions and captions in form*/
+p {
+  text-align: center;
+  color:rgb(100, 100, 100);
+}
+
+/*note for required fields*/
+.note {
+  text-align: left;
+  margin-top: -35px;
+}
+
+/*contains the form*/
+.container{
+  width: 1200px;
+  height: 900px;
+  background: #fff;
+  text-align: left;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+
+/*size which will only show current form*/
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+
+/*other forms in different steps*/
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+
+/*for checkbox alignment*/
+.col3{
+  width: 50%;
+  float: left;
+}
+
+/*put margin between checkbox and input*/
+.col3 .col input {
+  margin-right: 5px;
+}
+
+/*width of current form*/
+.form-outer form .page{
+  width: 25%;
+  animation: 1s fadein; 
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/*animation for fadein*/
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*format for each field*/
+.form-outer form .page .field{
+  width: 580px;
+  height: 45px;
+  margin: 45px 0;
+  margin-bottom: 60px;
+  display: flex;
+  position: relative;
+}
+
+/*width of field when column is divided into 2 more columns*/
+/*for personal info of webseeker*/
+.form-outer form .page .field .field2{
+  width: 250px;
+}
+
+/*label of each field*/
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+/*for small label below input*/
+form .page .field .label.small{
+  top: 50px; 
+  font-weight: 300; 
+  font-size: small;
+}
+
+/*input for field*/
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/* highlight indication on input*/
+form .page .field input:focus{
+  outline: none;
+  border-color: #7626f5;
+  box-shadow:0 0 10px #c395ff;
+}
+
+/*button for forms*/
+form .page .field button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-color: #5302d6;
+  border-style: solid;
+  color: #5302d6;
+  border-width: 2px;
+  margin-top: -20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+/*for submit button*/
+form .page .field .button2{
+  color: white;
+  background: #5302d6;
+}
+
+/*hover effect for button*/
+form .page .field button:hover{
+  box-shadow: 0px 0px 15px 5px #c395ff;
+}
+
+/*for previous button margin*/
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+  background-color: #fff;
+}
+
+/*for next button*/
+form .page .btns button.next{
+  margin-top: -43px;
+}
+
+/*check icon in done page*/
+.page .confirm{
+  font-size: 145px;
+  transform: translate(540px, 10px);
+  color: green;
+}
+
+/* margin for sign in form*/
+.form-outer form .page .field.left {
+  margin-left: 310px; 
+}
+
+/*progress bar styles*/
+
+/*progress bar layout*/
+.container .progress-bar{
+  animation: 1s fadein;
+  display: flex;
+  user-select: none;
+}
+
+/*align steps with Text*/
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+/*Step description under the circle shape*/
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+/*circle outline of progress bar steps*/
+.progress-bar .step .bullet{
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgb(0, 0, 0);
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/*will change the color of circle if active*/
+.progress-bar .step .bullet.active{
+  border-color: #5302d6;
+  background: #5302d6;
+}
+
+/*progress bar numbers 1 2 3 */
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*display of progress bar numbers will not be seen*/
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+
+/*progress bar lines*/
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 13px;
+  right: -70px;
+  left: 80px;
+  height: 3px;
+  border-radius: 20px;
+  width: 270px;
+  /*width: 60px;*/
+  background: #262626;
+}
+
+/*change progress bar color to indicate process*/
+.progress-bar .step .bullet.active:after{
+  background: #5302d6;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+/*keyframe animation on the progress bar animation*/
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+/*will not show the last progress bar line*/
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+
+/*change the color of progress name to indicate finished part*/
+.progress-bar .step p.active{
+  color: #5302d6;
+  transition: 0.2s linear;
+}
+
+/*for the check icon after every step*/
+.progress-bar .step .check{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/*show check icon after finishing a step*/
+.progress-bar .step .check.active{
+  display:block;
+  color:rgb(255, 255, 255);
+}
