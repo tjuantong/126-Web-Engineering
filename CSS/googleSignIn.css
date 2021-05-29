@@ -1,0 +1,83 @@
+/*For google sign-in button*/
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 500px;
+    border-radius: 5px;
+    border: thin solid #888;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+/*for sign in button length in webseeker and org form*/
+#customBtn.length {
+    width: 580px;
+}
+
+#customBtn:hover {
+    cursor: pointer;
+    border-color: #6398fa;
+    border-style: solid;
+    box-shadow: 0px 0px 5px 1px #a7c5ff;
+    transition: 0.5s ease;
+}
+
+/*google icon*/
+span.icon {
+    background: url('g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 38%;
+    height: 42px;
+    background-position-x: right;
+}
+
+/*for webseeker and org sign in*/
+span.icon .signin {
+    width: 235px;
+}
+
+/*text of sign in button*/
+span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+  
+    font-size: 14px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*for the ----or----*/
+.line{
+    position: absolute;
+    content: '';
+    float: left;
+    height: 2px;
+    border-radius: 20px;
+    width: 222px;
+    transform: translateY(304px);
+    background: #d2d2d2;
+}
+
+.signinline {
+    width: 200px;
+    transform: translate(370px, 10px);
+}
+  
+.line2{
+    position: absolute;
+    content: '';
+    float: left;
+    height: 2px;
+    border-radius: 20px;
+    width: 222px;
+    transform: translate(279px, 304px);
+    background: #d2d2d2;
+    
+}
+
+.signinline2{
+    width: 200px;
+    transform: translate(630px, 10px);
+}
